@@ -1,14 +1,19 @@
 import React from "react";
-import weather from "../assets/weather.jpg";
+import nodejs from "../assets/node-js.png";
+import css from "../assets/css-3.png";
+import html from "../assets/html.png";
+import JavaScript from "../assets/java-script.png";
+import mongodb from "../assets/mongodb-icon-1.svg";
+import react from "../assets/react.png";
 
 const Experience = () => {
   const techs = [
-    { id: 1, src: weather, title: "HTML", style: "shadow-orange-500" },
-    { id: 2, src: weather, title: "CSS", style: "shadow-blue-500" },
-    { id: 3, src: weather, title: "JAVASCRIPT", style: "shadow-sky-500" },
-    { id: 4, src: weather, title: "REACT", style: "shadow-blue-500" },
-    { id: 5, src: weather, title: "NODE JS", style: "shadow-orange-500" },
-    { id: 6, src: weather, title: "MONGO DB", style: "shadow-orange-500" },
+    { id: 1, src: html, title: "HTML", style: "shadow-orange-600" },
+    { id: 2, src: css, title: "CSS", style: "shadow-blue-600" },
+    { id: 3, src: JavaScript, title: "JavaScript", style: "shadow-yellow-500" },
+    { id: 4, src: react, title: "React", style: "shadow-cyan-400" },
+    { id: 5, src: nodejs, title: "Node JS", style: "shadow-green-500" },
+    { id: 6, src: mongodb, title: "MongoDB", style: "shadow-green-700" },
   ];
 
   return (
@@ -28,9 +33,9 @@ const Experience = () => {
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  ${style}`}
+              className={`shadow-md ${style} hover:scale-105 duration-500 py-2 rounded-lg`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt={title} className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}

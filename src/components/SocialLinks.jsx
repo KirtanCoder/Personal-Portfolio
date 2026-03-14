@@ -7,35 +7,54 @@ const SocialLinks = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500">
-          <a href="" className="flex justify-between items-center w-full text-white ">
+        <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-blue-600">
+          <a
+            href="https://www.linkedin.com/in/kirtan-kumar-2a5443289/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex justify-between items-center w-full text-white"
+          >
             <>
               LinkedIn
-              <FaLinkedin />
+              <FaLinkedin size={25} />
             </>
           </a>
         </li>
-       <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500">
-          <a href="" className="flex justify-between items-center w-full text-white">
+
+        <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-800">
+          <a
+            href="https://github.com/KirtanCoder"
+            target="_blank"
+            rel="noreferrer"
+            className="flex justify-between items-center w-full text-white"
+          >
             <>
               Github
-              <FaGithub />
+              <FaGithub size={25} />
             </>
           </a>
         </li>
-       <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500">
-          <a href="" className="flex justify-between items-center w-full text-white">
+
+        <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-red-500">
+          <a
+            href="mailto:kirtankrpc@outlook.com"
+            className="flex justify-between items-center w-full text-white"
+          >
             <>
               Mail
-              <HiOutlineMail />
+              <HiOutlineMail size={25} />
             </>
           </a>
         </li>
-       <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500">
-          <a href="" className="flex justify-between items-center w-full text-white">
+
+        <li className="flex justify-between items-center w-40 h-14 px-4 -ml-25 hover:ml-[-10px] hover:rounded-md duration-300 bg-green-600">
+          <a
+            href="mailto:kirtankrpc@gmail.com"
+            className="flex justify-between items-center w-full text-white"
+          >
             <>
               Contact
-              <BsFillPersonLinesFill />
+              <BsFillPersonLinesFill size={25} />
             </>
           </a>
         </li>
