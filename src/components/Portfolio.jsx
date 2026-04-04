@@ -1,10 +1,11 @@
 import React from "react";
 import weather from "../assets/weather.jpg";
+import Movie from "../assets/Movie-store.png";
 
 const Portfolio = () => {
 
 const portfolios = [
-  { id: 1, src: weather },
+  { id: 1, src: Movie },
   { id: 2, src: weather },
   { id: 3, src: weather },
   { id: 4, src: weather },
@@ -36,9 +37,9 @@ return (
             />
 
             <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <a href="https://movie-store-gamma.vercel.app/" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                 Demo
-              </button>
+              </a>
 
               <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                 Code
